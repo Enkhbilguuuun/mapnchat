@@ -18,7 +18,7 @@ export default async function Handler(
       res.status(200).json(GET);
     console.log(id)
       break;
-    case "PATCH":
+    case "PATCH":   
       //
       break;
     case "DELETE":

@@ -17,13 +17,14 @@ export default async function Handler(
       const result = await mongoDataApiRequest("insertOne", {
         document: { text: text },
       });
-      console.log(text);
 
       res.status(200).json(result);
       break;
     case "GET":
-      const GEt = await mongoDataApiRequest("find", {});
-      res.status(200).json(GEt);
+      const Get = await mongoDataApiRequest("find", {});
+      console.log('get ruu orj bna');
+      
+      res.status(200).json(Get);
       break;
   }
 }
